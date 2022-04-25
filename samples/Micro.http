@@ -1,0 +1,29 @@
+@customersUrl = http://localhost:5010
+@ordersUrl = http://localhost:5030
+@customerId = 00000000-0000-0000-0000-000000000001
+
+###
+GET {{customersUrl}}
+
+###
+GET {{customersUrl}}/customers
+
+###
+GET {{customersUrl}}/customers/{{customerId}}
+
+###
+POST {{customersUrl}}/customers
+Content-Type: application/json
+
+{
+    "name": "John Doe"
+}
+
+
+###
+POST {{ordersUrl}}/orders
+Content-Type: application/json
+
+{
+    "customerId": "{{customerId}}"
+}

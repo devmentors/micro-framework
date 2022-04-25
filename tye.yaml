@@ -1,0 +1,33 @@
+name: myspot
+services:
+- name: customers
+  project: samples/Micro.Samples.CustomersService/Micro.Samples.CustomersService.csproj
+  bindings:
+  - port: 5010
+  env:
+    - name: ASPNETCORE_ENVIRONMENT
+      value: development
+
+- name: deliveries
+  project: samples/Micro.Samples.DeliveriesService/Micro.Samples.DeliveriesService.csproj
+  bindings:
+  - port: 5020
+  env:
+    - name: ASPNETCORE_ENVIRONMENT
+      value: development
+
+- name: orders
+  project: samples/Micro.Samples.OrdersService/Micro.Samples.OrdersService.csproj
+  bindings:
+  - port: 5030
+  env:
+    - name: ASPNETCORE_ENVIRONMENT
+      value: development
+
+- name: Saga
+  project: samples/Micro.Samples.Saga/Micro.Samples.Saga.csproj
+  bindings:
+  - port: 5050
+  env:
+    - name: ASPNETCORE_ENVIRONMENT
+      value: development
