@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Micro.API\Micro.API.csproj" />
+      <ProjectReference Include="..\Micro.Auth\Micro.Auth.csproj" />
+      <ProjectReference Include="..\Micro.DAL.Mongo\Micro.DAL.Mongo.csproj" />
+      <ProjectReference Include="..\Micro.DAL.Postgres\Micro.DAL.Postgres.csproj" />
+      <ProjectReference Include="..\Micro.HTTP\Micro.HTTP.csproj" />
+      <ProjectReference Include="..\Micro.Messaging.Azure.ServiceBus\Micro.Messaging.Azure.ServiceBus.csproj" />
+      <ProjectReference Include="..\Micro.Messaging.RabbitMQ.Streams\Micro.Messaging.RabbitMQ.Streams.csproj" />
+      <ProjectReference Include="..\Micro.Messaging.RabbitMQ\Micro.Messaging.RabbitMQ.csproj" />
+      <ProjectReference Include="..\Micro.Observability\Micro.Observability.csproj" />
+      <ProjectReference Include="..\Micro.Security\Micro.Security.csproj" />
+      <ProjectReference Include="..\Micro.Transactions\Micro.Transactions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Figgle" Version="0.5.1" />
+    </ItemGroup>
+
+</Project>

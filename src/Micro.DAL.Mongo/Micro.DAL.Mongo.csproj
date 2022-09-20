@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MongoDB.Driver" Version="2.19.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Micro\Micro.csproj" />
+    </ItemGroup>
+    
+</Project>
